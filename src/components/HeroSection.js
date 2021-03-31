@@ -7,8 +7,8 @@ import './HeroSection.css';
 function HeroSection() {
     return (
         <div className='hero-container'>
-            <h1>ADVENTURE AWAITS</h1>
-            <p>What are you waiting for?</p>
+            <p>CAPTUREBAY Specializing </p>
+            <p>Video Production & Photography</p>
             <div className='hero-btns'>
                 <Button 
                     className='btns'
@@ -22,7 +22,7 @@ function HeroSection() {
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
                     >
-                    WATCH PORTFOLIO <i className='far fa-play-circle' />
+                    EXPLORE MORE <i className='far fa-play-circle' />
                 </ButtonPortfolio>
             </div>
         </div>
