@@ -78,7 +78,17 @@
   text-align: start;
   width: 80%;
   margin-bottom: 1rem;
-  color: #fff;
+  color: rgb(0, 0, 0);
+}
+.form-inputs2 {
+  padding: 8px 20px;
+  border-radius: 2px;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border: 1px solid #fff;
 }
 
 .form-inputs {
@@ -96,7 +106,7 @@
   display: inline-block;
   font-size: 0.8rem;
   margin-bottom: 6px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .form-input {

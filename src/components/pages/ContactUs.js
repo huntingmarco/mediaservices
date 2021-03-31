@@ -8,7 +8,10 @@ import Footer from '../Footer';
 function ContactUs () {
     return (
         <>
-           <h1>Contact Us</h1>
+            <h1>
+                Get started with us today! Contact us by filling out the
+                information below.
+            </h1> 
             <Contact />
             <Footer />
         </>

@@ -1,6 +1,6 @@
 import emailjs from "emailjs-com";
 import React from 'react';
-
+import './Formcontact.css'
 
 export default function Contact() {
 
@@ -9,7 +9,8 @@ export default function Contact() {
 
     emailjs.sendForm('service_3coqm38', 'template_ex5aada', e.target, 'user_elemesRZhjLVOQ8OWfUw4')
         .then((result) => {
-            console.log(result.text);
+            //console.log(result.text);
+            alert("Thank you for reaching out to us. We will get back to you shortly.");
         }, (error) => {
             console.log(error.text);
         });
@@ -19,24 +20,19 @@ export default function Contact() {
     return(
         <div>
             <div className="container">
-            <form onSubmit={sendEmail}>
-                    <div className="row pt-5 mx-auto">
-                        <div className="col-8 form-group mx-auto">
-                            <input type="text" className="form-control" placeholder="Name" name="name"/>
-                        </div>
-                        <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" placeholder="Email Address" name="email"/>
-                        </div>
-                        <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Subject" name="subject"/>
-                        </div>
-                        <div className="col-8 form-group pt-2 mx-auto">
-                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
-                        </div>
-                        <div className="col-8 pt-3 mx-auto">
-                            <input type="submit" className="btn btn-info" value="Send Message"></input>
-                        </div>
-                    </div>
+            <form onSubmit={sendEmail} className='form'>
+         
+                <label for="fname">Name</label>
+                <input type="text" name="name" placeholder="Your name.." required></input>
+                <label for="fname">Email</label>
+                <input type="text" name="email" placeholder="Your email.." pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required></input>
+                <label for="fname">Subject</label>
+                <input type="text" name="subject" placeholder="Subject.." required></input>
+                <label for="fname">Message</label>
+                <textarea type="text" name="message" placeholder="Your message.." required></textarea>
+                <input type="submit" value="Send Message"></input>
+                
+                   
                 </form>
             </div>
         </div>
